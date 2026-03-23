@@ -47,16 +47,14 @@ No teste de overfitting a loss deve chegar perto de 0 e o modelo reproduz a fras
 
 ## Entrega (versionamento)
 
-O contrato pede **marcação Git `v1.0`** no GitHub (é a *tag*, não a mensagem do commit).
+O contrato pede **tag Git `v1.0`** no GitHub (marca de versão; a mensagem do commit pode ser qualquer texto claro).
 
-Depois do último commit da entrega:
+No commit que fecha a entrega:
 
 ```bash
 git tag v1.0
 git push origin v1.0
 ```
-
-Se a tag já existir localmente e precisar recriar: `git tag -d v1.0` e então os comandos acima de novo (no remoto, só se o professor permitir apagar: `git push origin :refs/tags/v1.0`).
 
 ## Uso de IA
 

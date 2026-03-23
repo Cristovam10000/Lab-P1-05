@@ -45,6 +45,19 @@ No treino normal a loss caiu de ~11.2 pra ~5.4 em 15 épocas, mostrando que o mo
 
 No teste de overfitting a loss deve chegar perto de 0 e o modelo reproduz a frase de treino, provando que a arquitetura inteira tá correta.
 
+## Entrega (versionamento)
+
+O contrato pede **marcação Git `v1.0`** no GitHub (é a *tag*, não a mensagem do commit).
+
+Depois do último commit da entrega:
+
+```bash
+git tag v1.0
+git push origin v1.0
+```
+
+Se a tag já existir localmente e precisar recriar: `git tag -d v1.0` e então os comandos acima de novo (no remoto, só se o professor permitir apagar: `git push origin :refs/tags/v1.0`).
+
 ## Uso de IA
 
 Usei o Claude Code (Anthropic) pra me ajudar com a parte de manipulação do dataset e tokenização (Tarefas 1 e 2) — especificamente pra entender a API do HuggingFace (`load_dataset`, `AutoTokenizer`) e a lógica de montar os tensores com padding. O training loop da Tarefa 3 e o teste de overfitting da Tarefa 4 foram escritos em cima das classes que construí nos labs anteriores, seguindo o fluxo de forward/backward.
